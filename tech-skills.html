@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS/JS External-->
+    <link rel="stylesheet" href="tstyle.css">
+    <script src="script_3.js"></script>
+    <!-- link for the icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    
+    <!--Tab Name-->
+    <title>AAC Technical Skills</title>
+    <!--Navigation Bar-->
+    <nav class="navigation-bar">
+      <!--AAC Logo-->
+      <div class="logo"><img src="images/logo.png"></div>
+      <!--Navigation Links-->
+      <ul class="nav-div">
+          <li><a href="home.html">HOME</a></li>
+          <li>
+            <!--Skills Dropdown-->
+              <a href="#" class="dropdown-toggle">SKILLS</a>
+              <ul class="dropdown-menu">
+                  <li><a href="prof-skills.html">Professional Skills</a></li>
+                  <li><a class="active" href="tech-skills.html">Technical Skills</a></li>
+              </ul>
+          </li>
+          <li><a href="about.html">ABOUT</a></li>
+      </ul>
+  </nav>
+</head>
+<body>
+   <!--Smooth Page Transition-->
+   <script>
+    // Apply fade-in effect on page load
+    document.addEventListener("DOMContentLoaded", () => {
+        document.body.classList.add("fade-in");
+    });
+
+    // Apply fade-out effect on navigation
+    const links = document.querySelectorAll('a'); // Select all links
+    links.forEach(link => {
+        link.addEventListener('click', (event) => {
+            if (link.getAttribute('href') !== '#' && link.href) { // Ensure it's a valid link
+                event.preventDefault(); // Prevent immediate navigation
+                document.body.classList.add('fade-out'); // Trigger fade-out
+                setTimeout(() => {
+                    window.location = link.href; // Navigate after fade-out
+                }, 500); // Match the transition duration (0.5s)
+            }
+        });
+    });
+</script>
+
+<!-- CONTENT -->
+  <div class="title">
+    <h1>TECHNICAL SKILLS</h1>
+</div>
+  <!-- 4 Skill Section -->
+    <div class="cards-row">
+        <!-- Basic Computer Skills Card -->
+        <div class="card-container">
+          <div class="card">
+            <div class="front-card front-card-soft">
+              <div class="content">
+                <h2>1</h2>
+              </div>
+            </div>
+            <div class="back-card">
+              <div class="content">
+                <img src="images/compskillsback.png" alt="girl with comp icon" />
+                <h1 class="name">Basic Computer Skills</h1>
+                <p class="desc">
+                    Fundamental abilities to operate a computer.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Familiarity With Office Tools Card -->
+        <div class="card-container">
+          <div class="card">
+            <div class="front-card front-card-org">
+              <div class="content">
+                <h2>2</h2>
+              </div>
+            </div>
+            <div class="back-card">
+              <div class="content">
+                <img src="images/officeskillsback.png" alt="office icon" />
+                <h1 class="name">Familiarity With Office Tools</h1>
+                <p class="desc">
+                    Using software for tasks like analyzing data.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Website Skills Card -->
+        <div class="card-container">
+          <div class="card">
+            <div class="front-card front-card-collab">
+              <div class="content">
+                <h2>3</h2>
+              </div>
+            </div>
+            <div class="back-card">
+              <div class="content">
+                <img src="images/webskillsback.png" alt="Website Skills icon" />
+                <h1 class="name">Website Skills</h1>
+                <p class="desc">
+                    You can hone your skills in web technologies like HTML, CSS, JavaScript, and frameworks.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Wi-Fi Access Card -->
+        <div class="card-container">
+            <div class="card">
+              <div class="front-card front-card-collab">
+                <div class="content">
+                  <h2>4</h2>
+                </div>
+              </div>
+              <div class="back-card">
+                <div class="content">
+                  <img src="images/wifiskillsback.png" alt="wifi icon" />
+                  <h1 class="name">Wi-Fi Access</h1>
+                  <p class="desc">
+                    It enables convenient and mobile online connectivity.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+<!-- SKILLS DESCRIPTION -->
+    <div class="heading">
+      <h1>Skills Description</h1>
+      <p>Here you will find the definition, importance and examples of specific technical skills.</p>
+    </div>
+    <div class="desc-container">
+      <section class="desc">
+          <div class="desc-image">
+              <img src="images/compdesc.jpg" alt="org-image">
+          </div>
+          <div class="desc-content">
+              <h2>BASIC COMPUTER SKILLS</h2>
+              <p>Basic computer skills are the foundational abilities required to operate a computer in a workplace 
+                effectively. These include managing files, using common office software, connecting to networks and 
+                peripherals, and scheduling meetings. Employees must also know when to seek IT support for 
+                troubleshooting technical issues to maintain productivity.
+              </p>
+            <!-- Button to open the first popup -->
+                  <button id="open-popup-1">View Example</button>
+                  <!-- First Popup Modal -->
+                  <dialog id="popup-1">
+                      <h2>What You Should Know</h2>
+                      <p>
+                        The five basic computer skills include using a keyboard to type, operating a mouse to navigate,
+                        understanding basic software applications such as word processing and spreadsheets, browsing
+                        the internet, and managing files and folders. 
+                      </p>
+                      <div class="controls">
+                          <button class="close-btn" id="close-popup-1">Close</button>
+                      </div>
+                  </dialog>
+
+                  <!-- Button to open the second popup -->
+                  <button id="open-popup-2">Why This Matters</button>
+
+                  <!-- Second Popup Modal -->
+                  <dialog id="popup-2">
+                      <h2>Why This Matters</h2>
+                      <p> Basic computer skills are essential for employability and efficiency in today's digital age.
+                        Many job positions require basic computer skills like email, Microsoft Office, and internet
+                        navigation. Having these skills can increase job prospects and opportunities. Additionally,
+                        basic computer skills allow individuals to complete tasks more efficiently, saving time and
+                        increasing productivity.
+                      </p>
+                      <div class="controls">
+                          <button class="close-btn" id="close-popup-2">Close</button>
+                      </div>
+                  </dialog>
+          </div>
+      </section>
+
+          <!-- SECOND SKILL DESCRIPTION -->
+      <section class="desc">
+          <div class="desc-image">
+              <img src="images/toolsdesc.jpg" alt="org-image">
+          </div>
+          <div class="desc-content">
+              <h2>FAMILIARITY WITH OFFICE TOOLS</h2>
+              <p> "Familiarity with office tools" refers to having a basic understanding and proficiency in using
+                 standard software applications commonly found in workplaces, such as Microsoft Office and G Suite.
+              </p>
+            <!-- Button to open the first popup -->
+                  <button id="open-popup-3">View Examples</button>
+                  <!-- First Popup Modal -->
+                  <dialog id="popup-3">
+                      <h2>Take Note!</h2>
+                      <p> Microsoft Word and Google Docs for document creation, Microsoft Excel and Google Sheets
+                         for data management and analysis, PowerPoint and Google Slides for presentations, and Outlook 
+                         and Gmail for email communication and scheduling. These tools are commonly used in workplaces 
+                         to write documents, manage data, create presentations, and handle email correspondence.
+                      </p>
+                      <div class="controls">
+                          <button class="close-btn" id="close-popup-3">Close</button>
+                      </div>
+                  </dialog>
+
+                  <!-- Button to open the second popup -->
+                  <button id="open-popup-4">Why This Matters</button>
+
+                  <!-- Second Popup Modal -->
+                  <dialog id="popup-4">
+                      <h2>Don't Overlook It!</h2>
+                      <p>Familiarity with office tools is essential for efficiently completing tasks 
+                        such as document creation, data management, and communication. Proficiency in software 
+                        like word processors, spreadsheets, and presentation tools allows individuals to perform 
+                        work tasks more effectively and in less time. Additionally, being familiar with these tools
+                        facilitates better collaboration, streamlines workflow processes, and supports overall 
+                        productivity in the workplace.
+                      </p>
+                      <div class="controls">
+                          <button class="close-btn" id="close-popup-4">Close</button>
+                      </div>
+                  </dialog>
+          </div>
+      </section>
+
+      <!-- THIRD SKILL DESCRIPTION -->
+      <section class="desc">
+          <div class="desc-image">
+              <img src="images/webdesc.jpg" alt="org-image">
+          </div>
+          <div class="desc-content">
+              <h2>WEBSITE SKILLS</h2>
+              <p> "Website skills" refer to the ability to effectively navigate, interact with, and utilize web-based 
+                tools and applications to accomplish various tasks. It involves understanding how to use websites and 
+                web applications for specific functions, such as submitting forms, searching for information, or 
+                completing transactions, as well as following online instructions or troubleshooting issues when needed. 
+              </p>
+            <!-- Button to open the first popup -->
+                  <button id="open-popup-5">View Examples</button>
+                  <!-- First Popup Modal -->
+                  <dialog id="popup-5">
+                      <h2>Here it is!</h2>
+                      <ul>
+                        <li>Launching and navigating web browsers to access various websites.</li>
+                        <li>Organizing and managing frequently visited websites using bookmarks.</li>
+                        <li>Logging into websites and web applications securely, such as client portals or accounts tools.</li>
+                        <li>Following online instructions for completing tasks, like submitting invoices or finding directions through Google Maps.</li> 
+                      </ul>
+                      <div class="controls">
+                          <button class="close-btn" id="close-popup-5">Close</button>
+                      </div>
+                  </dialog>
+
+                  <!-- Button to open the second popup -->
+                  <button id="open-popup-6">Why This Matters</button>
+
+                  <!-- Second Popup Modal -->
+                  <dialog id="popup-6">
+                      <h2>Noteworthy Details</h2>
+                      <p> The importance of website skills lies in their ability to enhance efficiency and 
+                        productivity in performing daily tasks. Proficiency in navigating web browsers and utilizing 
+                        web-based tools ensures quick access to necessary information, accounts, and services, which
+                        is essential for meeting deadlines and managing tasks effectively. Additionally, these skills
+                        support seamless communication and collaboration, allowing individuals to engage with clients,
+                        access resources, and complete online forms or transactions with ease.
+                      </p>
+                      <div class="controls">
+                          <button class="close-btn" id="close-popup-6">Close</button>
+                      </div>
+                  </dialog>
+          </div>
+      </section>
+
+           <!-- FOURTH SKILL DESCRIPTION (one lang button sang wifi-access)-->
+           <section class="desc">
+            <div class="desc-image">
+                <img src="images/wifidesc.jpg" alt="org-image">
+            </div>
+            <div class="desc-content">
+                <h2>Wi-Fi ACCESS</h2>
+                <p>
+                  Wi-Fi access refers to the ability to connect to a wireless network that allows devices such as laptops,
+                  smartphones, and desktops to access the Internet. It involves selecting the appropriate Wi-Fi network
+                  from a list of available options and entering the required credentials, such as a password, to 
+                  establish a secure connection. This access is commonly available in public spaces like libraries,
+                  schools, and coffee shops, and typically requires authorization to use the network.
+                </p>
+              <!-- Button to open the first popup -->
+                    <button id="open-popup-7">Wi-Fi Icons Here!</button>
+                    <!-- First Popup Modal -->
+                    <dialog id="popup-7">
+                        <h2>WIFI connection icons</h2>
+                        <ul>
+                          <li>
+                            <img src="images/wifi.png">  
+                            You are connected to Wi-Fi and the Internet.
+                          </li>
+                          <li>
+                            <img src="images/no-wifi.png">
+                            You are connected to Wi-Fi, but there is no Internet connection.                           </li>
+                          <li>
+                            <img src="images/no-internet.png">
+                            You are not connected to the Internet. Click to see the available Wi-Fi networks.
+                          </li>
+                        </ul>                                          
+                        <div class="controls">
+                          <button class="close-btn" id="close-popup-7">Close</button>
+                      </div>
+                    </dialog>
+            </div>
+        </section>
+    </div>
+    <div class="overlay" id="overlay" style="display: none;"></div> <!-- Overlay for the modal -->
+    <script src="script.js"></script>
+
+  <!--SCROLL TO TOP-->
+  <div class="scroll-container">
+    <a href="#top"> scroll to top </a>
+    <!-- Internal CSS Style for scroll to top -->
+    <style>
+      .scroll-container {
+        right:0;
+        height: 100%;
+        background-color: #7ea0ac;
+        border-radius: 50px;
+        justify-self: center;
+        text-align: center;
+        width: 10%;
+        margin-top: 20px;
+      }
+      .scroll-container a {
+        position: sticky;
+        top: 70vh;
+        cursor: pointer;
+        font-size: 15px;
+        text-decoration: none;
+        color:white;
+        padding: 4px;
+        text-transform: capitalize;
+      }
+    </style>
+</div>
+</body>
+
+<!--FOOTER-->
+    <footer class="footer"> 
+      <img src="images/wvsu.png" alt="">
+      <img src="Images/cict.png" alt="">
+      <p> 2024 AAC. All Rights Reserved </p>
+    </footer>
+</html>

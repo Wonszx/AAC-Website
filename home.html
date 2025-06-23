@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS External-->
+    <link rel="stylesheet" href="homestyle.css">
+    <link rel="stylesheet" href="flickity.css" media="screen">
+    <!--Tab Name-->
+    <title>AAC Home</title>
+    <!--Navigation Bar-->
+    <nav class="navigation-bar">
+        <!--AAC Logo-->
+        <div class="logo"><img src="images/logo.png"></div>
+        <!--Navigation Links-->
+        <ul class="nav-div">
+            <li><a class="active" href="home.html">HOME</a></li>
+            <li>
+                <!--Skills Dropdown-->
+                <a href="#" class="dropdown-toggle">SKILLS</a>
+                <ul class="dropdown-menu">
+                    <li><a href="prof-skills.html">Professional Skills</a></li>
+                    <li><a href="tech-skills.html">Technical Skills</a></li>
+                </ul>
+            </li>
+            <li><a href="about.html">ABOUT</a></li>
+        </ul>
+    </nav>
+</head>
+
+<body>
+    <!--Smooth Page Transition-->
+    <script>
+        // Apply fade-in effect on page load
+        document.addEventListener("DOMContentLoaded", () => {
+            document.body.classList.add("fade-in");
+        });
+    
+        // Apply fade-out effect on navigation
+        const links = document.querySelectorAll('a'); // Select all links
+        links.forEach(link => {
+            link.addEventListener('click', (event) => {
+                if (link.getAttribute('href') !== '#' && link.href) { // Ensure it's a valid link
+                    event.preventDefault(); // Prevent immediate navigation
+                    document.body.classList.add('fade-out'); // Trigger fade-out
+                    setTimeout(() => {
+                        window.location = link.href; // Navigate after fade-out
+                    }, 500); // Match the transition duration (0.5s)
+                }
+            });
+        });
+    </script>
+
+<!-- CONTENT -->
+    <!--Hero Section 1-->
+      <div class="container">
+        <!--Left Column-->
+        <div class="column1">
+            <h1> SKILLS NEEDED TO SUCCEED IN IT</h1>
+            <p> 
+                In the rapidly evolving world of technology, the skills needed to succeed in IT 
+                extend beyond technical expertise, encompassing a combination of problem-solving, 
+                adaptability, and effective communication. IT professionals must possess a strong 
+                foundation in computer operations, familiarity with essential tools and software, 
+                and the ability to learn and apply new technologies quickly.
+            </p>
+            <a href="#itskills">What are Information Tech Skill?</a>
+            <div class="horizontal-line"></div>
+        </div> 
+        <!--Right Column-->
+        <div class="column2">
+            <img src="images/tronot.png" alt="Techpeep">
+        </div>
+      </div>
+      <!--IT SKILLS DEFINITION-->
+      <div class="container2" id="itskills"> 
+        <h1> Information Technology Skills </h1>
+        <p> Information technology skills refer to the ability to carry out diverse duties in IT roles. These skills, 
+            areas of knowledge and abilities relate to the creation, usage, application and management of different 
+            types of technology. IT skills come in many forms, and different positions may require distinct skill sets.
+        </p>
+        <p id="part2">
+            Because of this, it's crucial to emphasize your most relevant skills when applying for IT jobs to help you 
+            be a more appealing candidate for hiring managers. You often can develop these skills through on-the-job 
+            training, education programs and degree paths, formal training and certification programs
+        </p>
+      </div>
+      <!--SKILLS SLIDER-->
+      <div class="wrapper">
+        <!--JS SLIDER-->
+        <script src="flickity.pkgd.min.js"></script>
+        <!--SKILLS TITLE-->
+      <div class="container3">
+        <h1> SKILLS </h1>
+        <!--JS SLIDER-->
+        <div class="gallery js-flickity"
+        data-flickity-options='{ "wrapAround": true }'>
+        <!--SLIDE 1-->
+        <div class="gallery-cell"> 
+            <img src="images/1.png" alt="xx">
+            <div class="text">
+                Organizational and <br> Professional Skills
+            </div>
+        </div>
+        <!--SLIDE 2-->
+        <div class="gallery-cell">
+            <img src="images/2.png" alt="xx">
+            <div class="text">
+                Soft Skills
+            </div>
+        </div>
+        <!--SLIDE 3-->
+        <div class="gallery-cell">
+            <img src="images/3.png" alt="xx">
+            <div class="text">
+                Collaboration Skills
+            </div>
+        </div>
+        <!--SLIDE 4-->
+        <div class="gallery-cell">
+            <img src="images/4.png" alt="xx">
+            <div class="text">
+                Basic Computer Skills
+            </div>
+        </div>
+        <!--SLIDE 5-->
+        <div class="gallery-cell">
+            <img src="images/5.png" alt="xx">
+            <div class="text">
+                Familiarity with Office Tools
+            </div>
+        </div>
+        <!--SLIDE 6-->
+        <div class="gallery-cell">
+            <img src="images/6.png" alt="xx">
+            <div class="text">
+                Website Skills
+            </div>
+        </div>
+        <!--SLIDE 7-->
+        <div class="gallery-cell">
+            <img src="images/7.png" alt="xx">
+            <div class="text">
+                WI-FI Access
+            </div>
+        </div>
+        </div>
+        <!--LINE SEPARATOR-->
+        <div class="horizontal-line2"></div>
+      </div>
+    </div>
+    <!--CONTRIBUTION TO SUCCESS SECTION-->
+    <div class="container4">
+        <h1> CONTRIBUTION TO SUCCESS </h1>
+        <p>IT skills are essential for success in today’s digital world, 
+            enhancing career opportunities, productivity, and innovation. 
+            Proficiency in technology increases employability, offers higher 
+            earning potential, and enables career flexibility across industries.
+             IT skills improve efficiency by automating tasks and facilitating 
+             remote work, while fostering problem-solving, critical thinking, 
+             and creativity. They also enhance communication and collaboration, 
+             both locally and globally, and empower individuals to access information 
+             and continuous learning. Furthermore, understanding cybersecurity and 
+             digital tools helps protect personal data and supports social impact 
+             initiatives. Ultimately, IT skills are foundational for thriving in the 
+             modern, technology-driven economy.
+            </p>
+            <!--LINE SEPARATOR-->
+            <div class="horizontal-line3"></div>
+        </div>
+    <!--SCROLL TO TOP-->
+        <div class="scroll-container">
+            <a href="#top"> scroll to top </a>
+    <!-- Internal CSS Style for scroll to top -->
+      <style>
+        .scroll-container {
+          right:0;
+          height: 100%;
+          background-color: #7ea0ac;
+          border-radius: 50px;
+          justify-self: center;
+          text-align: center;
+          width: 10%;
+          margin-top: 20px;
+        }
+        .scroll-container a {
+          position: sticky;
+          top: 70vh;
+          cursor: pointer;
+          font-size: 15px;
+          text-decoration: none;
+          color:white;
+          padding: 4px;
+          text-transform: capitalize;
+        }
+      </style>
+    </div>
+</body>
+
+    <!--FOOTER-->
+        <footer class="footer"> 
+            <img src="images/wvsu.png" alt="">
+            <img src="Images/cict.png" alt="">
+            <p> 2024 AAC. All Rights Reserved </p>
+        </footer>
+</html>

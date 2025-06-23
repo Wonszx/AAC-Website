@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--CSS External-->
+    <link rel="stylesheet" href="aboutstyle.css">
+  <!--Font-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <!--Title-->
+   <title>AAC About</title>
+  <!--Navigation Bar-->
+    <nav class="navigation-bar">
+      <!--AAC Logo-->
+      <div class="logo"><img src="images/logo.png"></div>
+        <!--Navigation Links-->
+        <ul class="nav-div">
+          <!--Navigation Links-->
+            <li><a href="home.html">HOME</a></li>
+            <li>
+              <!--Skills Dropdown-->
+              <a href="#" class="dropdown-toggle">SKILLS</a>
+              <ul class="dropdown-menu">
+                  <li><a href="prof-skills.html">Professional Skills</a></li>
+                  <li><a href="tech-skills.html">Technical Skills</a></li>
+              </ul>
+          </li>
+            <li><a class="active" href="about.html">ABOUT</a></li>
+        </ul>
+    </nav>
+</head>
+<body>
+   <!--Smooth Page Transition-->
+   <script>
+    // Apply fade-in effect on page load
+    document.addEventListener("DOMContentLoaded", () => {
+        document.body.classList.add("fade-in");
+    });
+
+    // Apply fade-out effect on navigation
+    const links = document.querySelectorAll('a'); // Select all links
+    links.forEach(link => {
+        link.addEventListener('click', (event) => {
+            if (link.getAttribute('href') !== '#' && link.href) { // Ensure it's a valid link
+                event.preventDefault(); // Prevent immediate navigation
+                document.body.classList.add('fade-out'); // Trigger fade-out
+                setTimeout(() => {
+                    window.location = link.href; // Navigate after fade-out
+                }, 500); // Match the transition duration (0.5s)
+            }
+        });
+    });
+</script>
+
+<!-- CONTENT -->
+  <!--Hero Section-->
+  <div class="subj-title">
+    <h1> CC 201 </h1>
+  </div>
+  <section class="subject">
+    <h2> Introduction to Computing</h2>
+    <p> This course deals with the importance of
+      computer concepts. Emphasis is on defining 
+      and categorizing computers and operating 
+      systems; purchasing hardware and software; 
+      understanding files and data storage options;
+      exploring computer architecture; and 
+      understanding digital media. Topics include 
+      digital technology, software, Internet and 
+      the web, input/output devices, storage 
+      technology, operating systems, data 
+      representation, processors, computer 
+      memory, network, search engine, website, 
+      web browser, web page, e-commerce, number 
+      system conversion/arithmetic, digital media. 
+    </p>
+  </section>
+        <div class="title">
+            <h1>MEET THE DEVELOPERS</h1>
+        </div>
+    <!--Profile Cards-->
+        <section class="wrapper">
+      <!--Profile 1-->
+        <div class="card">
+            <div class="card-front">
+                <img class="card-image" src="images/laij (1).png">
+              <p class="name">Elaijah</p>
+              <p class="subtitle">BSCS 1-B | Group 8</p>
+            </div>
+            <div class="card-back">
+              <h1>PROFILE INFO</h1>
+              <!--Personal Information-->
+              <div class="info-row">
+                <p><strong>Name:</strong></p>
+                    <p>Elaijah A. Aman</p>
+                <p><strong>Birthday:</strong></p>
+                    <p>August 2, 2005</p>
+                <p><strong>Address:</strong></p>
+                    <p>Roxas City, Capiz</p>
+                <p><strong>Contact:</strong></p>
+                    <p>09934861101</p>
+                <!--Contact Icons-->
+                <div class="icons">
+                  <a href ="https://web.facebook.com/jaemnchu" target="_blank" class="social-icon facebook">
+                    <i class="fab fa-facebook"></i></a>
+                  <a href="mailto:elaijah.aman@wvsu.edu.ph" target="_blank" class="social-icon gmail">
+                    <i class="fab fa-google"></i></a>
+                  <a href="https://www.instagram.com/jaemnchu/" target="_blank" class="social-icon instagram">
+                    <i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!--Profile 2-->
+          <div class="card">
+            <div class="card-front">
+              <img class="card-image" src="images/dawn.png">
+                <p class="name">Dawn</p>
+                  <p class="subtitle">BSCS 1-B | Group 8</p>
+            </div>
+            <div class="card-back">
+                <h1>PROFILE INFO</h1>
+                <!--Personal Information-->
+                    <div class="info-row">
+                  <p><strong>Name:</strong></p>
+                    <p>Mary Dawn Alido</p>
+                  <p><strong>Birthday:</strong></p>
+                    <p>May 8, 2006</p>
+                  <p><strong>Address:</strong></p>
+                    <p>Tigbauan, Maasin, Iloilo</p>
+                  <p><strong>Contact:</strong></p>
+                    <p>09952645883</p>
+                  <!--Contact Icons-->
+                      <div class="icons">
+                        <a href ="https://web.facebook.com/MD2860" target="_blank" class="social-icon facebook">
+                            <i class="fab fa-facebook"></i></a>
+                        <a href="mailto:marydawn.alido@wvsu.edu.ph" target="_blank" class="social-icon gmail">
+                            <i class="fab fa-google"></i></a>
+                        <a href="https://www.instagram.com/d.w_nnn/" target="_blank" class="social-icon instagram">
+                            <i class="fab fa-instagram"></i></a>
+                      </div>
+                    </div>
+              </div>
+            </div>
+        <!--Profile 3-->
+            <div class="card">
+              <div class="card-front">
+                <img class="card-image" src="images/gweni.png">
+                  <p class="name">Gwen</p>
+                  <p class="subtitle">BSCS 1-B | Group 8</p>
+              </div>
+                <div class="card-back">
+                  <h1>PROFILE INFO</h1>
+                    <div class="info-row">
+                    <p><strong>Name:</strong></p>
+                      <p>Gwen Tricia G. Cirujales</p>
+                    <p><strong>Birthday:</strong></p>
+                      <p>January 10, 2003</p>
+                    <p><strong>Address:</strong></p>
+                      <p>160 Bagumbayan St., Iloilo City</p>
+                    <p><strong>Contact:</strong></p>
+                      <p>09156085613</p>
+                  <!--Contact Icons-->
+                      <div class="icons">
+                          <a href ="https://web.facebook.com/iamwenii" target="_blank" class="social-icon facebook">
+                            <i class="fab fa-facebook"></i></a>
+                          <a href="mailto:gwentricia.cirujales@wvsu.edu.ph" target="_blank" class="social-icon gmail">
+                            <i class="fab fa-google"></i></a>
+                          <a href="https://www.instagram.com/millukai/" target="_blank" class="social-icon instagram">
+                            <i class="fab fa-instagram"></i></a>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </section>
+
+    <!--SCROLL TO TOP-->
+        <div class="scroll-container">
+          <a href="#top"> scroll to top </a>
+    <!-- Internal CSS Style for scroll to top -->
+    <style>
+      .scroll-container {
+        right:0;
+        height: 100%;
+        background-color: #7ea0ac;
+        border-radius: 50px;
+        justify-self: center;
+        text-align: center;
+        width: 10%;
+        margin-top: 20px;
+      }
+      .scroll-container a {
+        position: sticky;
+        top: 70vh;
+        cursor: pointer;
+        font-size: 15px;
+        text-decoration: none;
+        color:white;
+        padding: 4px;
+        text-transform: capitalize;
+      }
+      </style>
+    </div>
+</body>
+
+    <!--FOOTER-->
+      <footer class="footer"> 
+          <img src="images/wvsu.png" alt="">
+          <img src="Images/cict.png" alt="">
+          <p> 2024 AAC. All Rights Reserved </p>
+      </footer>
+</html> 

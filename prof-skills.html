@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS/JS External-->
+    <link rel="stylesheet" href="profstyle.css">
+    <script src="script_2.js"></script>
+    <!-- link for the icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    
+    <!--Tab Name-->
+    <title>AAC Professional Skills</title>
+    <!--Navigation Bar-->
+    <nav class="navigation-bar">
+      <!--AAC Logo-->
+      <div class="logo"><img src="images/logo.png"></div>
+      <!--Navigation Links-->
+      <ul class="nav-div">
+          <li><a class href="home.html">HOME</a></li>
+          <li>
+            <!--Skills Dropdown-->
+              <a href="#" class="dropdown-toggle">SKILLS</a>
+              <ul class="dropdown-menu">
+                  <li><a class="active" href="prof-skills.html">Professional Skills</a></li>
+                  <li><a href="tech-skills.html">Technical Skills</a></li>
+              </ul>
+          </li>
+          <li><a href="about.html">ABOUT</a></li>
+      </ul>
+  </nav>
+</head>
+<body>
+   <!--Smooth Page Transition-->
+   <script>
+    // Apply fade-in effect on page load
+    document.addEventListener("DOMContentLoaded", () => {
+        document.body.classList.add("fade-in");
+    });
+
+    // Apply fade-out effect on navigation
+    const links = document.querySelectorAll('a'); // Select all links
+    links.forEach(link => {
+        link.addEventListener('click', (event) => {
+            if (link.getAttribute('href') !== '#' && link.href) { // Ensure it's a valid link
+                event.preventDefault(); // Prevent immediate navigation
+                document.body.classList.add('fade-out'); // Trigger fade-out
+                setTimeout(() => {
+                    window.location = link.href; // Navigate after fade-out
+                }, 500); // Match the transition duration (0.5s)
+            }
+        });
+    });
+</script>
+
+<!-- CONTENT -->
+    <div class="title">
+        <h1>PROFESSIONAL SKILLS</h1>
+    </div>
+  <!-- 3 Skill Section Cards -->
+    <div class="cards-row">
+        <!-- Soft Skills Card -->
+        <div class="card-container">
+          <div class="card">
+            <div class="front-card front-card-soft">
+              <div class="content">
+                <h2>1</h2>
+              </div>
+            </div>
+            <div class="back-card">
+              <div class="content">
+                <img src="images/softskillback.png" alt="soft skills icon" />
+                <h1 class="name">Soft Skills</h1>
+                <p class="desc">
+                  Skills that enable effective interaction, including communication, empathy, and teamwork.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Organizational Skills Card -->
+        <div class="card-container">
+          <div class="card">
+            <div class="front-card front-card-org">
+              <div class="content">
+                <h2>2</h2>
+              </div>
+            </div>
+            <div class="back-card">
+              <div class="content">
+                <img src="images/orgskillback.png" alt="organization icon" />
+                <h1 class="name">Organizational Skills</h1>
+                <p class="desc">
+                  Ability to manage time, tasks, and resources effectively for successful project execution.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Collaboration Skills Card -->
+        <div class="card-container">
+          <div class="card">
+            <div class="front-card front-card-collab">
+              <div class="content">
+                <h2>3</h2>
+              </div>
+            </div>
+            <div class="back-card">
+              <div class="content">
+                <img src="images/collabskillback.png" alt="collaboration icon" />
+                <h1 class="name">Collaboration</h1>
+                <p class="desc">
+                  The ability to work effectively in teams, fostering cooperation and understanding.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!-- SKILLS DESCRIPTION -->
+    <div class="heading">
+      <h1>SKILLS DESCRIPTION</h1>
+      <p>Here you will find the definition, importance and examples of specific professional skills.</p>
+    </div>
+    <div class="desc-container">
+      <section class="desc">
+          <div class="desc-image">
+              <img src="images/orgdesc.jpg" alt="org-image">
+          </div>
+          <div class="desc-content">
+              <h2>ORGANIZATIONAL AND PROJECT MANAGEMENT SKILLS</h2>
+              <p>Modern jobs require strong organizational and project 
+                  management skills to handle complexity and shifting goals. 
+                  A group of skills is needed to initiate, plan, and execute a project. 
+                  Using your resources efficiently and effectively. Such as maintaining an orderly workspace, 
+                  meeting deadlines and communicating well with your team.
+              </p>
+            <!-- Button to open the first popup -->
+                  <button id="open-popup-1">View Example</button>
+                  <!-- First Popup Modal -->
+                  <dialog id="popup-1">
+                      <h2>What You Should Know</h2>
+                      <p>For example, upgrading the computer systems for a department involves managing details 
+                          like hardware specifications, software installations, and network configurations. 
+                          Tools like Microsoft Excel or Trello help track tasks, timelines, and communication.
+                      </p>
+                      <div class="controls">
+                          <button class="close-btn" id="close-popup-1">Close</button>
+                      </div>
+                  </dialog>
+
+                  <!-- Button to open the second popup -->
+                  <button id="open-popup-2">Why This Matters</button>
+
+                  <!-- Second Popup Modal -->
+                  <dialog id="popup-2">
+                      <h2>Why This Matters</h2>
+                      <p>Organizational and project management skills are crucial in today's workplace because 
+                          they enhance efficiency and productivity, ensuring tasks are completed on time and within 
+                          budget. These skills enable clear goal-setting and progress tracking, facilitate team 
+                          coordination, and improve problem-solving by identifying and addressing issues early.
+                      </p>
+                      <div class="controls">
+                          <button class="close-btn" id="close-popup-2">Close</button>
+                      </div>
+                  </dialog>
+          </div>
+      </section>
+
+          <!-- SECOND SKILL DESCRIPTION -->
+      <section class="desc">
+          <div class="desc-image">
+              <img src="images/softdesc.jpg" alt="org-image">
+          </div>
+          <div class="desc-content">
+              <h2>SOFT SKILLS</h2>
+              <p> Soft skills—also known as “people skills” or “interpersonal skills”—are a set of personal attributes 
+                  and abilities that allow individuals to effectively interact with others in a professional setting. 
+                  They are essential for success in a wide range of industries and professions. Whether you are working 
+                  with colleagues from diverse cultural backgrounds or communicating with customers and clients around 
+                  the world—the ability to navigate complex interpersonal dynamics and build strong relationships is 
+                  the key to success.
+              </p>
+            <!-- Button to open the first popup -->
+                  <button id="open-popup-3">View Examples</button>
+                  <!-- First Popup Modal -->
+                  <dialog id="popup-3">
+                      <h2>Take Note!</h2>
+                      <p> Communication, leadership, adaptability, emotional intelligence, 
+                          empathy, time management, and respect.
+                      </p>
+                      <div class="controls">
+                          <button class="close-btn" id="close-popup-3">Close</button>
+                      </div>
+                  </dialog>
+
+                  <!-- Button to open the second popup -->
+                  <button id="open-popup-4">Why This Matters</button>
+
+                  <!-- Second Popup Modal -->
+                  <dialog id="popup-4">
+                      <h2>Don't Overlook It!</h2>
+                      <p>While technical skills are crucial early in a career, soft skills become 
+                          increasingly important as one progresses and takes on leadership roles, eventually 
+                          surpassing technical expertise in importance. Success in the workplace requires more 
+                          than just technical expertise and knowledge. It is important for individuals to possess 
+                          attributes and abilities that allow them to collaborate with teams and colleagues—otherwise
+                          known as soft skills.
+                      </p>
+                      <div class="controls">
+                          <button class="close-btn" id="close-popup-4">Close</button>
+                      </div>
+                  </dialog>
+          </div>
+      </section>
+
+      <!-- THIRD SKILL DESCRIPTION -->
+      <section class="desc">
+          <div class="desc-image">
+              <img src="images/collabdesc.jpg" alt="org-image">
+          </div>
+          <div class="desc-content">
+              <h2>COLLABORATION SKILLS</h2>
+              <p> Since most technology jobs have become more flexible, allowing for onsite, remote, or hybrid work. 
+                  Most offices rely heavily on collaboration software for employees to connect with each other easily. 
+                  It is crucial that employees know how to utilize chat softwares and web conferencing tools.
+              </p>
+            <!-- Button to open the first popup -->
+                  <button id="open-popup-5">View Examples</button>
+                  <!-- First Popup Modal -->
+                  <dialog id="popup-5">
+                      <h2>Chat Softwares You Should Try!</h2>
+                      <p>Chat software like Slack, Google Suite, or Basecamp and web conferencing tools 
+                          like Zoom, Webex, and GoTo Meeting are popular.
+                      </p>
+                      <div class="controls">
+                          <button class="close-btn" id="close-popup-5">Close</button>
+                      </div>
+                  </dialog>
+
+                  <!-- Button to open the second popup -->
+                  <button id="open-popup-6">Why This Matters</button>
+
+                  <!-- Second Popup Modal -->
+                  <dialog id="popup-6">
+                      <h2>Noteworthy Details</h2>
+                      <p>Collaboration skills are essential in modern workplaces as they enhance communication, 
+                          boost productivity, and support remote work by enabling real-time collaboration 
+                          and easy information sharing. 
+                      </p>
+                      <div class="controls">
+                          <button class="close-btn" id="close-popup-6">Close</button>
+                      </div>
+                  </dialog>
+          </div>
+      </section>
+    </div>
+    <div class="overlay" id="overlay" style="display: none;"></div> <!-- Overlay for the modal -->
+    <script src="script.js"></script>
+
+  <!--SCROLL TO TOP-->
+    <div class="scroll-container">
+      <a href="#top"> scroll to top </a>
+      <!-- Internal CSS Style for scroll to top -->
+      <style>
+        .scroll-container {
+          right:0;
+          height: 100%;
+          background-color: #7ea0ac;
+          border-radius: 50px;
+          justify-self: center;
+          text-align: center;
+          width: 10%;
+          margin-top: 20px;
+        }
+        .scroll-container a {
+          position: sticky;
+          top: 70vh;
+          cursor: pointer;
+          font-size: 15px;
+          text-decoration: none;
+          color:white;
+          padding: 4px;
+          text-transform: capitalize;
+        }
+      </style>
+  </div>
+</body>
+
+  <!--FOOTER-->
+      <footer class="footer"> 
+        <img src="images/wvsu.png" alt="">
+        <img src="Images/cict.png" alt="">
+        <p> 2024 AAC. All Rights Reserved </p>
+      </footer>
+</html>
